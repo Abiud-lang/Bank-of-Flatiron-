@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Transaction from './components/Transaction'
+import SearchBar from './components/SearchBar'
 
 const App = () => {
-const [transactions,setTransactions]=useState([])
+const [transactions,setTransactions]=useState([]);
+
   useEffect(() =>{
     fetch("http://localhost:3000/transactions")
     .then(res =>res.json())
@@ -10,11 +12,14 @@ const [transactions,setTransactions]=useState([])
     )
   },[])
   
- 
   return (
-    <div>
-      <h1>The Bank Of Flatiron</h1>
-      <Transaction transactions={transactions}/>
+    <div >
+      <div className=' flex justify-evenly items-center shadow-lg p-4 m-2'>
+      <h1 className=' font-bold text-2xl '>The Bank Of Flatiron</h1>
+      <SearchBar/>
+      </div>
+      <Transaction 
+      transactions={transactions} />
     </div>
   )
 }
