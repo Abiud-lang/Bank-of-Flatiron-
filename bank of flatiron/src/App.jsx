@@ -4,7 +4,11 @@ import SearchBar from './components/SearchBar'
 
 const App = () => {
 const [transactions,setTransactions]=useState([]);
+const [searchText,setSearchText] = useState ('')
 
+const handleSearch = (text) => {
+  setSearchText(text)
+}
 
   useEffect(() =>{
     fetch("http://localhost:3000/transactions")
