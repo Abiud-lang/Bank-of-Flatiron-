@@ -5,10 +5,10 @@ const TransactionItems = ({ description,category,amount,date }) => {
     <tbody>
     <tr>
        
-        <td  className="px-4 py-2 border-2 hover:text-slate-400  ">{description}</td>
-        <td  className="px-4 py-2 border-2 hover:text-slate-400 ">{category}</td>
-        <td  className="px-4 py-2 border-2 hover:text-slate-400">{amount}</td>
-        <td  className="px-4 py-2 border-2 hover:text-slate-400">{date}</td>
+        <td  className="px-4 py-2 border-2 hover:text-orange-600  ">{description}</td>
+        <td  className="px-4 py-2 border-2 hover:text-orange-600 ">{category}</td>
+        <td  className="px-4 py-2 border-2 hover:text-orange-600">{amount}</td>
+        <td  className="px-4 py-2 border-2 hover:text-orange-600">{date}</td>
     </tr>
     </tbody>
   )
