@@ -1,7 +1,7 @@
 import React from 'react'
 import TransactionItems from './TransactionItems'
 
-const Transaction = ({ transactions }) => {
+const Transaction = ({ transactions,searchText }) => {
   return (
     <div  className=' flex justify-center text-center    '>
     <table className=' shadow-2xl  rounded-md p-8 m-4 max-w-800  '>
@@ -14,6 +14,9 @@ const Transaction = ({ transactions }) => {
         </tr>
         </thead>
       {transactions
+       .filter((transaction) =>
+        searchText === '' || transaction.description.toLowerCase().includes(searchText.toLowerCase())
+      )
       .map(transaction=> <TransactionItems
 
        key={transaction.id}
