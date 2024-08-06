@@ -24,7 +24,7 @@ const handleSearch = (text) => {
       <SearchBar onSearch={handleSearch}/>
       </div>
       <Transaction 
-      transactions={transactions}  />
+      transactions={transactions} searchText={searchText} />
     </div>
   )
 }
