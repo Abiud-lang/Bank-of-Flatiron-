@@ -21,7 +21,7 @@ const handleSearch = (text) => {
     <div >
       <div className=' flex justify-evenly items-center shadow-lg p-4 m-2'>
       <h1 className=' font-bold text-2xl text-orange-500 '>The Bank Of Flatiron</h1>
-      
+      <SearchBar onSearch={handleSearch}/>
       </div>
       <Transaction 
       transactions={transactions}  />
