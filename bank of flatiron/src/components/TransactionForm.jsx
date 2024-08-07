@@ -16,7 +16,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('https://flatiron-bank-trq3.vercel.app/transactions', {
+        fetch('https://flatiron-bank-five.vercel.app/transactions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
