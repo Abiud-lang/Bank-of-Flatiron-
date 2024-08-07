@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Transaction from './components/Transaction'
 import SearchBar from './components/SearchBar'
 
+
 const App = () => {
 const [transactions,setTransactions]=useState([]);
 const [searchText,setSearchText] = useState ('')
@@ -23,6 +24,7 @@ const handleSearch = (text) => {
       <h1 className=' font-bold text-2xl text-orange-500 '>The Bank Of Flatiron</h1>
       <SearchBar onSearch={handleSearch}/>
       </div>
+   
       <Transaction 
       transactions={transactions} searchText={searchText} />
     </div>
