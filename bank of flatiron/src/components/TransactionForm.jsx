@@ -16,7 +16,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:3000/transactions', {
+        fetch('https://flatiron-bank-trq3.vercel.app/transactions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
                         name="description"
                         value={formData.description}
                         onChange={handleChange}
-                        
+                           className="p-2 border-2 rounded-lg shadow-sm"
                         required
                     />
                 </div>
@@ -57,7 +57,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
                         name="category"
                         value={formData.category}
                         onChange={handleChange}
-                        
+                           className="p-2 border-2 rounded-lg shadow-sm"
                         required
                     />
                 </div>
@@ -69,7 +69,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
                         name="amount"
                         value={formData.amount}
                         onChange={handleChange}
-                        
+                           className="p-2 border-2 rounded-lg shadow-sm"
                         required
                     />
                 </div>

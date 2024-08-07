@@ -13,7 +13,7 @@ const handleSearch = (text) => {
 }
 
   useEffect(() =>{
-    fetch("http://localhost:3000/transactions")
+    fetch("https://flatiron-bank-trq3.vercel.app/transactions")
     .then(res =>res.json())
     .then(transaction =>setTransactions(transaction)
     )
