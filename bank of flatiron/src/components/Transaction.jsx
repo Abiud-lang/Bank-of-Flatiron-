@@ -4,7 +4,7 @@ import TransactionItems from './TransactionItems'
 const Transaction = ({ transactions,searchText }) => {
   return (
     <div  className=' flex justify-center text-center    '>
-    <table className=' shadow-2xl  rounded-md p-8 m-4 max-w-800  '>
+    <table className=' shadow-2xl  rounded-lg p-8 m-4 max-w-800  '>
         <thead >
        <tr className=" bg-orange-500">
         <th className=' p-4 border-2'>Description</th>

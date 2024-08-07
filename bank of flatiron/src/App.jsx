@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Transaction from './components/Transaction'
 import SearchBar from './components/SearchBar'
+import TransactionForm from './components/TransactionForm'
 
 
 const App = () => {
@@ -24,9 +25,12 @@ const handleSearch = (text) => {
       <h1 className=' font-bold text-2xl text-orange-500 '>The Bank Of Flatiron</h1>
       <SearchBar onSearch={handleSearch}/>
       </div>
-   
+      <div className=' flex justify-evenly items-center' >
+     
       <Transaction 
       transactions={transactions} searchText={searchText} />
+       <TransactionForm transactions={transactions} setTransactions={setTransactions} />
+      </div>
     </div>
   )
 }

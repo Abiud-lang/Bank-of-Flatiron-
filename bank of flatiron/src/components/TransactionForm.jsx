@@ -35,10 +35,10 @@ const TransactionForm = ({ transactions, setTransactions }) => {
     };
 
     return (
-        <div >
+        <div className='flex justify-center items-center shadow-2xl rounded-md text-center p-4 m-4' >
             <form onSubmit={handleSubmit}>
-                <div >
-                    <label htmlFor="description" >Description:</label>
+                <div  className='mb-4' >
+                    <label className=' flex justify-center ' htmlFor="description" >Description:</label>
                     <input
                         type="text"
                         id="description"
@@ -50,7 +50,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
                     />
                 </div>
                 <div className='mb-4'>
-                    <label htmlFor="category" >Category:</label>
+                    <label className=' flex justify-center' htmlFor="category" >Category:</label>
                     <input
                         type="text"
                         id="category"
@@ -61,15 +61,15 @@ const TransactionForm = ({ transactions, setTransactions }) => {
                         required
                     />
                 </div>
-                <div className='mb-4'>
-                    <label htmlFor="amount" >Amount:</label>
+                <div className='mb-4 '>
+                    <label className='flex justify-center ' htmlFor="amount" >Amount:</label>
                     <input
                         type="number"
                         id="amount"
                         name="amount"
                         value={formData.amount}
                         onChange={handleChange}
-                    
+                        
                         required
                     />
                 </div>
@@ -85,7 +85,7 @@ const TransactionForm = ({ transactions, setTransactions }) => {
                         required
                     />
                 </div>
-                <button type="submit" >Add Transaction</button>
+                <button className='bg-orange-500 hover:bg-orange-700 text-white font-bold px-5 py-2 rounded m-2' type="submit" >Add </button>
             </form>
         </div>
     );
