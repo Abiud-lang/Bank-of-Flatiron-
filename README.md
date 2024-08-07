@@ -13,9 +13,18 @@ A React application for managing transactions. This app allows users to view, se
 - Transaction: Displays transactions in a table format and handles search functionality.
 - TransactionItems: Displays  transactions one by one  within the table.
 - SearchBar: A search bar component to filter transactions by description.
+## Set up
+### Clone the Repository
+#### Clone the repository to your local machine using Git:
+
+``git clone git@github.com:kiprotichabiud/Bank-of-Flatiron-.git``
 
 
+#### Install Dependencies
 
+`npm install`
+#### Run application
+`npm run dev`
 
 ## Live link
 https://phase2-code-challange.vercel.app/
